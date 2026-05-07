@@ -1,0 +1,74 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "age": 28,
+      "rating": 5,
+      "feedback": "Excellent product! Exceeded my expectations."
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "age": 35,
+      "rating": 4,
+      "feedback": "Good quality, but delivery took longer than expected."
+    },
+    {
+      "id": 3,
+      "name": "Emma Williams",
+      "age": 42,
+      "rating": 5,
+      "feedback": "Amazing service and fast shipping!"
+    },
+    {
+      "id": 4,
+      "name": "David Martinez",
+      "age": 31,
+      "rating": 3,
+      "feedback": "Average product. Nothing special but it works."
+    },
+    {
+      "id": 5,
+      "name": "Lisa Anderson",
+      "age": 26,
+      "rating": 4,
+      "feedback": "Very satisfied with the purchase. Will buy again."
+    },
+    {
+      "id": 6,
+      "name": "James Brown",
+      "age": 38,
+      "rating": 5,
+      "feedback": "Outstanding quality and customer support!"
+    },
+    {
+      "id": 7,
+      "name": "Rachel Green",
+      "age": 29,
+      "rating": 2,
+      "feedback": "Not satisfied with the defects in the product."
+    },
+    {
+      "id": 8,
+      "name": "Thomas Lee",
+      "age": 45,
+      "rating": 4,
+      "feedback": "Good value for money. Recommended."
+    },
+    {
+      "id": 9,
+      "name": "Jennifer White",
+      "age": 33,
+      "rating": 5,
+      "feedback": "Perfect! Exactly what I needed."
+    },
+    {
+      "id": 10,
+      "name": "Robert Taylor",
+      "age": 50,
+      "rating": 3,
+      "feedback": "Decent product but could improve the design."
+    }
+  ]
+}
