@@ -6,9 +6,9 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
- """
 
-""" titanic = sns.load_dataset("titanic")
+
+titanic = sns.load_dataset("titanic")
 
 features = ["pclass", "sex", "fare", "embarked", "age"]
 target = ["survived"]
@@ -59,18 +59,33 @@ plot_tree(
 
 plt.tight_layout() """
 
-# Random Forest
+from sklearn.ensemble import BaggingClassifier
 
-from sklearn.ensemble import RandomForestClassifier
+base_model = DecisionTreeClassifier()
 
-rf = RandomForestClassifier(
-    n_estimators = 501,
-    oob_score = True,
-    max_depth = 4
+bagging = BaggingClassifier(
+    base_model,
+    n_estimators=201
 )
 
-rf.fit(x_train,y_train)
-y_pred = rf.predict(x_test)
+bagging.fit(x_train,y_train)
+y_pred = bagging.predict(x_test)
 
-print("OOB Score : ",rf.oob_score_*100,"%")
-print("Accuracy : ",accuracy_score(y_test,y_pred) * 100,"%")
+print("Accuracy :",accuracy_score(y_test,y_pred))
+
+# Bagging Classifier
+
+from sklearn.linear_model import LogisticRegression
+
+base_model = LogisticRegression(max_iter=1000)
+
+bagging = BaggingClassifier(
+    base_model,
+    n_estimators=201
+)
+
+bagging.fit(X_train, y_train)
+
+y_pred = bagging.predict(X_test)
+
+print("accuracy: ", accuracy_score(y_test, y_pred))
