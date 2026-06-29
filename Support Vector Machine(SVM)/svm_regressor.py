@@ -64,7 +64,7 @@ y_train_pred_scaled = model.predict(x_train)
 print(r2_score(y_train_scaled,y_train_pred_scaled))
 print(r2_score(y_test_scaled,y_test_pred_scaled))
 
-# 
+# GridSearchCV
 
 param_grid = {
     "C": [1, 2, 5, 10, 50, 100],
