@@ -22,7 +22,7 @@ pip install requests beautifulsoup4 pandas
 
 ## Concepts Covered
 
-### 1. Basic GET Request
+### 1. Basic GET request
 
 Sends an HTTP GET request to a URL and prints the response.
 
